@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Pensamento } from '../pensamento';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentoComponent implements OnInit {
 
-  listaPensamentos = [
+  listaPensamentos: Pensamento[] = []
+
+/*
+  listaPensamentos: Pensamento[] = [
+    // 1 passando como array vazio para pegar os dados da API
+
+    // 2 aqui o conteúdo sendo passado diretamente, antes de aprender a fazer com a API
     {
       conteudo: 'Passo informações para o componente filho',
       autoria: 'Componente pai',
@@ -34,10 +42,13 @@ export class ListarPensamentoComponent implements OnInit {
       modelo: 'modelo3'
     },
   ];
+  */
 
-  constructor() { }
+  constructor(private service: PensamentoService) { }
 
   ngOnInit(): void {
+    this.service.listar().subscribe((listaPensamentos => {
+      this.listaPensamentos = listaPensamentos
+    }))
   }
-
 }
