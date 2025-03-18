@@ -4,43 +4,57 @@
       "id": 1,
       "conteudo": "Que bom que vc veio",
       "autoria": "Nay",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 2,
       "conteudo": "Estudando Angular",
       "autoria": "Dev Alura",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Oui are de champions",
       "autoria": "Ma Fren",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": true
     },
     {
       "conteudo": "Pensamento de teste",
       "autoria": "Eu",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Pensamento de teste",
       "autoria": "Eu",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 6
     },
     {
       "conteudo": "Pensamento de teste",
       "autoria": "Eu",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 7
     },
     {
       "conteudo": "Edição de pensamento teste",
       "autoria": "Update",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 8
+    },
+    {
+      "conteudo": "To Bee or",
+      "autoria": "Not 2B",
+      "modelo": "modelo2",
+      "favorito": true,
+      "id": 9
     }
   ]
 }
